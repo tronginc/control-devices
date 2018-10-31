@@ -1,0 +1,57 @@
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\Devices Control Program.exe.config
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\Devices Control Program.exe
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\Devices Control Program.pdb
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Data.v18.1.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Utils.v18.1.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Data.v18.1.xml
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Utils.v18.1.xml
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices Control Program.csprojAssemblyReference.cache
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices_Control_Program.Properties.Resources.resources
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices Control Program.csproj.GenerateResource.cache
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices Control Program.exe.licenses
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices Control Program.csproj.CoreCompileInputs.cache
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices Control Program.csproj.CopyComplete
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices Control Program.exe
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices Control Program.pdb
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices_Control_Program.SignIn.resources
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\Newtonsoft.Json.xml
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices_Control_Program.Home.resources
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices_Control_Program.Loading.resources
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices_Control_Program.DeviceControl.resources
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\M2Mqtt.Net.dll
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices_Control_Program.AddRoom.resources
+C:\Users\TRONG\source\repos\Devices Control Program\Devices Control Program\obj\Debug\Devices_Control_Program.ListRoom.resources
