@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Source\Form\Sub\ScheduleBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\Form\Sub\ScheduleBox.Designer.cs">
+      <DependentUpon>ScheduleBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Source\Form\Sub\ListRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </Compile>
     <EmbeddedResource Include="Source\Form\Sub\ListRoom.resx">
       <DependentUpon>ListRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Form\Sub\ScheduleBox.resx">
+      <DependentUpon>ScheduleBox.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

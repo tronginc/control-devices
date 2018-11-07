@@ -42,6 +42,7 @@
             this.ButtonListRoom = new System.Windows.Forms.Button();
             this.addRoom = new Devices_Control_Program.AddRoom();
             this.listRoom = new Devices_Control_Program.ListRoom();
+            this.Schedule = new Devices_Control_Program.ScheduleBox();
             this.PanelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadingPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureIconUser)).BeginInit();
@@ -211,15 +212,23 @@
             this.listRoom.Size = new System.Drawing.Size(1104, 849);
             this.listRoom.TabIndex = 8;
             // 
+            // Schedule
+            // 
+            this.Schedule.Location = new System.Drawing.Point(300, 44);
+            this.Schedule.Name = "Schedule";
+            this.Schedule.Size = new System.Drawing.Size(1104, 849);
+            this.Schedule.TabIndex = 10;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1404, 893);
-            this.Controls.Add(this.listRoom);
             this.Controls.Add(this.PanelMenuLeft);
             this.Controls.Add(this.PanelControl);
+            this.Controls.Add(this.listRoom);
             this.Controls.Add(this.addRoom);
+            this.Controls.Add(this.Schedule);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -250,5 +259,6 @@
         private System.Windows.Forms.Panel PanelLeftButton;
         private ListRoom listRoom;
         private AddRoom addRoom;
+        private ScheduleBox Schedule;
     }
 }

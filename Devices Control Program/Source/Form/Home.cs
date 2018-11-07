@@ -323,6 +323,8 @@ namespace Devices_Control_Program
         private void ButtonTimer_Click(object sender, EventArgs e)
         {
             PanelLeftButton.Top = ButtonTimer.Top;
+            Schedule.BringToFront();
+            
         }
 
         private void ButtonSetting_Click(object sender, EventArgs e)
