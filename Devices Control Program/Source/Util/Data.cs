@@ -16,6 +16,7 @@ namespace Devices_Control_Program.Source.Util
             public static List<Room> rooms;
             public static List<Device> device;
             public static List<Device> devices;            
+            public static List<Schedule> schedules;            
         }
         public static List<String> roomIcon = JsonConvert.DeserializeObject<List<String>>("[\"BanCong.png\",\"bathtub.png\",\"bed.png\",\"boy2.png\",\"boy.png\",\"cooking.png\",\"flowers-pot-of-yard.png\",\"garage.png\",\"gate.png\",\"girl.png\",\"kitchen1.png\",\"livingroom.png\",\"toilet.png\",\"toilet2.png\",\"tv-table.png\",\"voice.png\",\"warehouse.png\",\"washing-machine.png\",\"washing-machine1.png\",\"window.png\"]");
     }

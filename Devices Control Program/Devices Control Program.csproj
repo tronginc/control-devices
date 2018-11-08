@@ -113,6 +113,7 @@
     <Compile Include="Source\Util\MqttMessage.cs" />
     <Compile Include="Source\Util\Mqtt.cs" />
     <Compile Include="Source\Util\Room.cs" />
+    <Compile Include="Source\Util\Schedule.cs" />
     <EmbeddedResource Include="Source\Form\Sub\AddRoom.resx">
       <DependentUpon>AddRoom.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +169,31 @@
   <ItemGroup>
     <None Include="Resources\add-circular-outlined-button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qiot_IoT-use-cases-img41.png" />
+  </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\devices\BanCong.png" />
+    <Content Include="Resources\devices\bathtub.png" />
+    <Content Include="Resources\devices\bed.png" />
+    <Content Include="Resources\devices\boy.png" />
+    <Content Include="Resources\devices\boy2.png" />
+    <Content Include="Resources\devices\cooking.png" />
+    <Content Include="Resources\devices\flowers-pot-of-yard.png" />
+    <Content Include="Resources\devices\garage.png" />
+    <Content Include="Resources\devices\gate.png" />
+    <Content Include="Resources\devices\girl.png" />
+    <Content Include="Resources\devices\kitchen1.png" />
+    <Content Include="Resources\devices\livingroom.png" />
+    <Content Include="Resources\devices\toilet.png" />
+    <Content Include="Resources\devices\toilet2.png" />
+    <Content Include="Resources\devices\tv-table.png" />
+    <Content Include="Resources\devices\voice.png" />
+    <Content Include="Resources\devices\warehouse.png" />
+    <Content Include="Resources\devices\washing-machine.png" />
+    <Content Include="Resources\devices\washing-machine1.png" />
+    <Content Include="Resources\devices\window.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

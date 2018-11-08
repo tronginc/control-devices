@@ -101,5 +101,5 @@ namespace Devices_Control_Program
                 LoadingPicture.Hide();
             }
         }
-    }
+  }
 }

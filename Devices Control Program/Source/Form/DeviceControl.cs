@@ -16,7 +16,7 @@ using System.Windows.Forms;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace Devices_Control_Program
-{    
+{
     public partial class DeviceControl : Form
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -37,7 +37,7 @@ namespace Devices_Control_Program
             LabelRoomName.Left = (this.PanelInfo.Width - LabelRoomName.Size.Width) / 2;
         }
 
-   
+
 
         private void ButtonClose_Click(object sender, EventArgs e)
         {
@@ -46,7 +46,7 @@ namespace Devices_Control_Program
         Dictionary<string, MySwitch> mySwitches = new Dictionary<string, MySwitch>();
         void client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs args)
         {
-            
+
             Debug.WriteLine(Encoding.UTF8.GetString(args.Message), args.Topic.ToString() + "_" + 0);
             if (InvokeRequired)
             {
@@ -55,7 +55,7 @@ namespace Devices_Control_Program
                 Debug.WriteLine("// Do Something LOL");
                 this.BeginInvoke(action);
             }
-          
+
         }
 
         private void doMqttMessageProcess(String mqttTopic, String mqttMessage)
@@ -91,43 +91,43 @@ namespace Devices_Control_Program
         private Font drawFont = new Font("Times New Roman", 18);
         private int aHeight = 60;
         private int rWidth = 0;
-        private int rPadding = 20;        
+        private int rPadding = 20;
         private Panel DrawPanelDeviceOutput(Device device, int height)
-        {            
+        {
             Panel p = new Panel();
             p.Name = device.topic;
             p.BackColor = Color.FromArgb(255, 255, 255);
-            p.Size = new Size(rWidth, height);               
-                p.Paint += (ss, ee) =>
+            p.Size = new Size(rWidth, height);
+            p.Paint += (ss, ee) =>
+            {
+                Graphics g = this.CreateGraphics();
+                ee.Graphics.DrawString(device.name, drawFont, Brushes.Black, 15, 20);
+                for (int x = 0; x < device.controls.@out.Count; x++)
                 {
-                    Graphics g = this.CreateGraphics();
-                    ee.Graphics.DrawString(device.name, drawFont, Brushes.Black, 15, 20);
-                    for (int x = 0; x < device.controls.@out.Count; x++)
-                    {
-                        ee.Graphics.DrawString(device.controls.@out[x].name, drawFont, Brushes.Black, 15, 20 + aHeight * (x + 1));
-                        MySwitch mySwitch = new MySwitch();
-                        mySwitch.Top = 20 + aHeight * (x + 1);
-                        mySwitch.Left = rWidth - 80;
-                        mySwitch.Width = 50;
-                        mySwitch.Checked = true;
-                        var pin = x;
-                        mySwitch.CheckStateChanged += (object sender, EventArgs e) => mySwitches_CheckedChanged(sender, e, pin, device.topic);
-                        Debug.WriteLine(device.topic + "_" + x);
-                        if (!mySwitches.ContainsKey(device.topic + "_" + x)) mySwitches.Add(device.topic + "_" + x, mySwitch);
-                        p.Controls.Add(mySwitch);
-                    }
-                };
+                    ee.Graphics.DrawString(device.controls.@out[x].name, drawFont, Brushes.Black, 15, 20 + aHeight * (x + 1));
+                    MySwitch mySwitch = new MySwitch();
+                    mySwitch.Top = 20 + aHeight * (x + 1);
+                    mySwitch.Left = rWidth - 80;
+                    mySwitch.Width = 50;
+                    mySwitch.Checked = true;
+                    var pin = x;
+                    mySwitch.CheckStateChanged += (object sender, EventArgs e) => mySwitches_CheckedChanged(sender, e, pin, device.topic);
+                    Debug.WriteLine(device.topic + "_" + x);
+                    if (!mySwitches.ContainsKey(device.topic + "_" + x)) mySwitches.Add(device.topic + "_" + x, mySwitch);
+                    p.Controls.Add(mySwitch);
+                }
+            };
 
             return p;
         }
 
-        private void mySwitches_CheckedChanged(object sender, EventArgs e, int pin,  String topic)
+        private void mySwitches_CheckedChanged(object sender, EventArgs e, int pin, String topic)
         {
             JObject message = new JObject();
             message.Add("type", 1);
             JArray data = new JArray();
             data.Add(pin);
-            data.Add(mySwitches[topic + "_" + pin].Checked ? 1: 0);
+            data.Add(mySwitches[topic + "_" + pin].Checked ? 1 : 0);
             message.Add("data", data);
             Debug.WriteLine("// Do Something in main process");
             Mqtt.client.Publish(topic, // topic
@@ -141,12 +141,14 @@ namespace Devices_Control_Program
         {
             Panel p = new Panel();
             p.Name = device.id;
+            rWidth = (PanelDevice1.ClientSize.Width);
             p.BackColor = Color.FromArgb(255, 255, 255);
             p.Size = new Size(rWidth, height);
             p.Paint += (ss, ee) =>
             {
                 Graphics g = this.CreateGraphics();
                 ee.Graphics.DrawString(device.name, drawFont, Brushes.Black, 15, 20);
+                ee.Graphics.DrawString("An toàn", drawFont, Brushes.Green, rWidth - 110, 20);
 
             };
 
@@ -154,7 +156,7 @@ namespace Devices_Control_Program
         }
 
         private void CreateDeviceBox()
-        {           
+        {
             var devices = Data.User.device;
             rWidth = (PanelDevice1.ClientSize.Width);
             topics = new List<String>();
@@ -167,14 +169,14 @@ namespace Devices_Control_Program
                 var device = devices[i];
                 QoS.Add(MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE);
                 topics.Add(device.topic);
-                Mqtt.client.MqttMsgPublishReceived += client_MqttMsgPublishReceived;                
                 if (device.isInput())
                 {
-                    numberofInput++;
+                    numberofInput++;              
+                    int rHeight = aHeight;
+                    Panel p = DrawPanelDeviceInput(device, rHeight);
                     if (rTop1 <= rTop2 && rTop1 <= rTop3)
                     {
-                        int rHeight = aHeight;
-                        Panel p = DrawPanelDeviceInput(device, rHeight);
+
                         p.Top = rTop1;
                         rTop1 += rHeight + rPadding;
                         PanelDevice1.Controls.Add(p);
@@ -182,8 +184,7 @@ namespace Devices_Control_Program
                     }
                     else if (rTop2 <= rTop1 && rTop2 <= rTop3)
                     {
-                        int rHeight = aHeight;
-                        Panel p = DrawPanelDeviceInput(device, rHeight);
+                     
                         p.Top = rTop2;
                         rTop2 += rHeight + rPadding;
                         PanelDevice2.Controls.Add(p);
@@ -191,8 +192,6 @@ namespace Devices_Control_Program
                     }
                     else
                     {
-                        int rHeight = aHeight;
-                        Panel p = DrawPanelDeviceInput(device, rHeight);
                         p.Top = rTop3;
                         rTop3 += rHeight + rPadding;
                         PanelDevice3.Controls.Add(p);
@@ -228,13 +227,14 @@ namespace Devices_Control_Program
                         rTop3 += rHeight + rPadding;
                         PanelDevice3.Controls.Add(p);
                         PanelDevice3.Invalidate();
-                    }                    
+                    }
                 }
             }
             LabelNumberOutput.Text = numberofOutput.ToString();
             LabelNumberInput.Text = numberofInput.ToString();
-            Debug.WriteLine("Subscrible to " + topics.ToArray());            
+            Debug.WriteLine("Subscrible to " + topics.ToArray());
             if (topics.Count > 0) Mqtt.client.Subscribe(topics.ToArray<String>(), QoS.ToArray<Byte>());
+            Mqtt.client.MqttMsgPublishReceived += client_MqttMsgPublishReceived;
         }
         private void DeviceControl_Load(object sender, EventArgs e)
         {
@@ -258,7 +258,10 @@ namespace Devices_Control_Program
             {
                 for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
                 {
-                   
+                    foreach (KeyValuePair<string, MySwitch> mySwitch in mySwitches)
+                    {
+                        mySwitch.Value.Checked = true;
+                    }
                 }
             }
             else if (dialogResult == DialogResult.No)
@@ -274,7 +277,10 @@ namespace Devices_Control_Program
             {
                 for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
                 {
-
+                    foreach (KeyValuePair<string, MySwitch> mySwitch in mySwitches)
+                    {
+                        mySwitch.Value.Checked = false;
+                    }
                 }
             }
             else if (dialogResult == DialogResult.No)
@@ -291,5 +297,5 @@ namespace Devices_Control_Program
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
-    }    
+    }
 }
